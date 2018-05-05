@@ -5,6 +5,6 @@ A fully customizable game engine developed in VC++ using DirectX that can render
 
 The project is released under GNU Lesser General Public License v3.0 as specified in the LICENSE.LESSER file.
 
-Copyright (C) 2006-2018 Sumandeep Banerjee, sumandeep.banerjee@gmail.com
+Copyright (C) 2013-2018 Sumandeep Banerjee, sumandeep.banerjee@gmail.com
 
 https://www.linkedin.com/in/sumandeep-banerjee-1436a17/
