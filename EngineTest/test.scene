@@ -1,0 +1,48 @@
+# Copyright (C) 2013-2018 Sumandeep Banerjee (sumandeep.banerjee@gmail.com)
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# all dimensions (positions) are in m, angles are in degrees, color are in range 0.0 - 1.0
+
+# camera parameters: type(0 for land object, 1 for aircraft) pos.x pos.y pos.z look.x look.y look.z height fovy
+camera 1 -5.0 2.0 -30.0 0.0 0.0 1.0 2.0 90.0
+
+# initial viewport distortion parameters: eyeOffset frustumOffset leftHorizontalOffset rightHorizontalOffset leftVerticalAlignment rightVerticalAlignment barrelFactor
+viewport 0.07 0.0 0.5 0.5 0.0 0.0 -8.0 # dual viewport
+# viewport 0.0 0.0 1.0 1.0 0.0 0.0 -100000.0 # single viewport
+
+# light sources (one or more): type(0=ambient,1=point,2=spot,3=directional)
+# ambient light is mandatory for scene illumination, else everything would be dark
+# ambient light: 0 r g b
+# light 0 0.4 0.4 0.4
+
+# point light: 1 r g b px py pz
+light 1 1.0 1.0 1.0 20.0 4.0 0.0
+light 1 1.0 1.0 1.0 -20.0 4.0 0.0
+
+# spot light: 2 r g b px py pz dx dy dz
+# light 2 1.0 1.0 1.0 0.0 10.0 0.0 0.0 -1.0 0.0
+
+# directional light: 3 r g b dx dy dz
+# light 3 0.8 0.8 0.8 0.0 -1.0 0.0
+
+# terrain parameters:
+terrain test.terrain
+
+# optional objects (zero or more)
+# object parameters: objectfile(*.obj) scale yaw pitch roll tx ty tz
+object rome.obj 0.25 180.0 0.0 0.0 20.0 0.01 0.0
+object car.obj 0.015 0.0 0.0 0.0 0.0 0.0 -10.0
+object R001.obj 0.001 0.0 0.0 0.0 0.0 0.01 0.0
+object uh60.obj 1.5 0.0 -90.0 0.0 -10.0 6.3 5.0

@@ -1,0 +1,26 @@
+# Copyright (C) 2013-2018 Sumandeep Banerjee (sumandeep.banerjee@gmail.com)
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+# terrain tile list
+# tile r g b (color code for terrain type map) texturefile
+tile 128 255 0 grass.bmp
+tile 192 128 0 desert.bmp
+tile 127 127 127 pavement2.jpg
+
+# terrain layer list
+# layer heightmap(24 bit grayscale (R=G=B) bmp) gridscale baseheight heightscale terrainmap(24 bit bmp with color coded tiles) movementmap(24 bit bmp with color codes)
+# terrainmap colors must match valid color codes for tiles in tile list
+# movementmap (green = valid movement, red = not accessible, white = move to upper level, black = move to lower level)
+layer flat.bmp 1.0 0.0 0.025 testmap.bmp testmovement.bmp

@@ -1,5 +1,5 @@
 /*
- *     Copyright (C) 2014-2018 Sumandeep Banerjee
+ *     Copyright (C) 2013-2018 Sumandeep Banerjee
  * 
  *     This program is free software: you can redistribute it and/or modify
  *     it under the terms of the GNU Lesser General Public License as published by
@@ -13,6 +13,12 @@
  * 
  *     You should have received a copy of the GNU Lesser General Public License
  *     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/* 
+ * File: distortion.fx - D3D HLSL Effect File for implementing barrel distortion
+ * Author: sumandeep
+ * Email:  sumandeep.banerjee@gmail.com
 */
 
 texture preWarpBuffer;
