@@ -16,7 +16,7 @@
 */
 
 /* 
- * File: distortion.fx - D3D HLSL Effect File for implementing barrel distortion
+ * File: distortion.fx - D3D HLSL Effect Shader for implementing barrel distortion
  * Author: sumandeep
  * Email:  sumandeep.banerjee@gmail.com
 */
